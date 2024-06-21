@@ -1,0 +1,46 @@
+body, html {
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(105deg, #1a62e7 0%, #2a5298 50%, #a6c0fe 100%);
+}
+
+.container {
+    display: flex;
+    flex-direction:row;
+    width: 800px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.boxes {
+    padding: 80px 30px;
+    margin-top: 150px;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+.box-1.changed {
+    background-color: aquamarine;
+}
+
+#btn1.changed {
+    background-color: lightgreen;
+}
+
+.buttons {
+    opacity: .999;
+    background: transparent;
+    padding: 4px;
+    border-radius: 3px;
+    border-color: whitesmoke;
+    color: crimson;
+}
+
+.hidden-text {
+    display: none;
+}
+
+.hidden-text.reveal-btn {
+    display: inline-block;
+}
