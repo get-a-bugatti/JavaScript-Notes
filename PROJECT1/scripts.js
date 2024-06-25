@@ -9,7 +9,7 @@ const quotes= [
     },
     {
       quote: "Life is what happens when you're busy making other plans.",
-      person: "John Lennon"
+      person: "John lanon"
     },
     {
       quote: "Get busy living or get busy dying.",
