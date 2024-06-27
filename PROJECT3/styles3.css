@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(depositphotos_52467393-stock-illustration-group-of-people-asking-questions.jpg) no-repeat center center/ contain;
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.accordion-title {
+    font-size: larger;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
+.accordion-content {
+    margin-top: 30px;
+}
+
+.accordion {
+    background-color: bisque;
+    opacity: 0.9;
+    border: 2px solid bisque;
+    border-radius: 10px;
+    width: 600px;
+    height: fit-content;
+    padding: 10px;
+
+
+}
+
+.accordion-item {
+    margin: 25px;
+}
+.question-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.question {
+    font-size: smaller;
+}
+
+hr {
+    margin-top: 8px;
+}
+
+.plus {
+    font-size: larger;
+}
+
+.answer {
+    display: none;
+}
+
+.reveal {
+    transition-duration: 1s;
+    display: block;
+}
