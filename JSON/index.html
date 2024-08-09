@@ -4,8 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <main class="container">
+        <div class="input-box">
+            <input type="text" id="pokemonId" placeholder="Enter pokemon name">
+            <button id="submit" onclick="handleSubmit()">Find</button>
+        </div>
+
+        <div class="content-box">
+            <p>Name: <span class="poke-name">[pokemon-name]</span></p>
+            <p>Abilities: <span class="poke-abilities">[pokemon-ablities]</span></p>
+        </div>
+    </main>
     <script src="./fetch.js"></script>
 </body>
 </html>
