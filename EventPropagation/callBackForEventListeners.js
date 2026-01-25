@@ -1,17 +1,20 @@
 let b =(name, fnc)=>{
-    console.log(name)
-    const event = {
+
+console.log(name)
+const event = {
     click: {
-    ddd: 'suresh'
+        ddd: 'suresh'
     },
     input: {
-    ddd: 'ramesh'
-    },
+        ddd: 'ramesh'
     }
-    console.log(event['click'])
-    fnc(event[name],name)
-    }
-    
-    b('click',(e,naam)=>{
-    console.log(e,naam)
-    })
+}
+
+console.log(event['click']);
+fnc(event[name],name);
+
+}
+
+b('click',(e,naam)=>{
+console.log(e,naam)
+})
