@@ -1,46 +1,43 @@
 # Scope in Javascript
 
 -> when curly braces `{}` comes with **if-else** or **function** , it is called a **scope**.
--> 3 kinds of scope :
 
+-> 4 kinds of scope :
 - global scope
 - function scope
 - block scope
 - lexical scope
 
-  ## keep in mind :
+## keep in mind :
+1. globally defined `var` is accessible and modifiable, even within a block scope (if-else-block).
+	```
+		let a = 10;
+		const b = 20;
+		var c = 30;
 
-  - globally defined `var` is accessible and modifiable, even within a block scope (if-else-block).
+		if (true) {
+			let a = 20;
+			const b = 30;
+			var c = 40;
+		}
 
-    ```
-        let a = 10;
-        const b = 20;
-        var c = 30;
+		console.log(a);
+		console.log(b);
+		console.log(c); # c is 40.
+	```
+	- but not in function scope, and also, `let`, `const` is not.
 
-            if (true) {
-            let a = 20;
-            const b = 30;
-            var c = 40;
-            }
+2.  **LEXICAL Scope** : For function `inner` , function `outer` acts like a global scope. This is what we call a lexical scope, which gives rise to closures.
 
-            console.log(a);
-            console.log(b);
-            console.log(c);     # c is 40.
-    ```
+	```
+		function outer() {
+		const something = "kenny";
 
-        - but not in function scope, and also, `let`, `const` is not.
-
-  - **LEXICAL Scope** : For function `inner` , function `outer` acts like a global scope. This is what we call a lexical scope, which gives rise to closures.
-    ```
-      function outer() {
-        const something = "kenny";
-
-        function inner() {
-          console.log(something); // prints 'kenny'
-        }
-
-        inner();
-      }
-
-      outer();
-    ```
+		function inner() {
+			console.log(something); // prints 'kenny'
+		}
+		inner();
+		}
+		
+		outer();
+	```
