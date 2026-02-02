@@ -68,9 +68,11 @@ JS engine alone is synchronous.
 
 ---
 
-[./images/eventLoop.png](the Event loop)
 
 # 📌 Breaking Down Your Diagram
+
+[./images/eventLoop.png](the Event loop)
+
 
 ## 🟨 JS Engine
 
