@@ -78,7 +78,7 @@ Because:
 
 # 🖼️ Stack vs Heap Diagram
 
-![Stack VS Heap](./stackVSheap.png)
+![Stack VS Heap](./images/stackVSheap.png)
 
 
 

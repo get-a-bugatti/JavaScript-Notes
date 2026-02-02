@@ -4,7 +4,7 @@ There are two main execution contexts for functions running in JS:
 - Function Execution Context
 - In some documentations of mongoose, you may also see reference of a separate lesser-known execution context, **Eval Execution Context**
 
-![Execution Contexts](./executionContexts.png)
+![Execution Contexts](./images/executionContexts.png)
 
 ---
 
@@ -40,7 +40,7 @@ In the execution phase:
 - When **one of the functions is called**, a stack for function `a()` is pushed onto the Call Stack.
 - It gets popped when program flow reaches the ending curly braces `}` of `function a()`.
 
-![Call Stack - Simple](./simpleCallStack.png)
+![Call Stack - Simple](./images/simpleCallStack.png)
 
 ---
 
@@ -56,7 +56,7 @@ Similarly, each function context has its own:
 1. Memory Creation Phase  
 2. Execution Phase  
 
-![Call Stack - Full Overview](./fullOverviewOfCallStack.png)
+![Call Stack - Full Overview](./images/fullOverviewOfCallStack.png)
 
 ---
 
@@ -66,5 +66,5 @@ Similarly, each function context has its own:
 
 - This is important when dealing with **nested functions**, where functions are stacked upon functions, which are stacked upon the Global Execution Context (G.E.C).
 
-![Call Stack for Nested Functions](./nestedFunctionCallStack.png)
+![Call Stack for Nested Functions](./images/nestedFunctionCallStack.png)
 
