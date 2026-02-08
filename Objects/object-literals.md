@@ -1,6 +1,11 @@
 JavaScript Notes: Objects and Object Literals 
 =================================================
 
+0\. Primary Question :
+----------------------
+Does Javscript really have Classes ?
+![Class](./classes.png)
+
 1\. Object Literals
 -------------------
 An **Object Literal** is a comma-separated list of name-value pairs wrapped in curly braces. It’s the "manual" way to create an object.
